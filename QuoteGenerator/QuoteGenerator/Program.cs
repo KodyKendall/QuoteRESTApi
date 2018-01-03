@@ -21,7 +21,7 @@ namespace QuoteGenerator
             {
                 Console.WriteLine("\n Type in your request, or type \"Quit\" to quit.");
                 string userInput = Console.ReadLine();
-                if (userInput == "Quit")
+                if (userInput.ToUpper() == "QUIT")
                     break;
                 else 
                     ProcessQuoteRequest(userInput).Wait();
